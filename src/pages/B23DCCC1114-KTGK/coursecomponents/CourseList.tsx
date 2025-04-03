@@ -1,4 +1,4 @@
-// components/CourseList.tsx
+// coursecomponents/CourseList.tsx
 import React from 'react';
 import { Table, Button, Tag, Space, Tooltip } from 'antd';
 import { EditOutlined, DeleteOutlined, EyeOutlined } from '@ant-design/icons';
