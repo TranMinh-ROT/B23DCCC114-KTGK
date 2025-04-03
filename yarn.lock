@@ -2364,13 +2364,12 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tinymce/tinymce-react@^4.2.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-4.3.0.tgz#5e2f5a58526a1bba9710f54f5fcf16abd4c742a1"
-  integrity sha512-iB4cUsYfcJL4NGuKhqCGYuTmFTje3nPxyPv1HxprTsp/YMGuuiiSNWrv3zwI31QX5Cn8qeq9MrMDnbxuRugHyg==
+"@tinymce/tinymce-react@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-6.1.0.tgz#1c53bc9790f46e5f0502764c2c421562b03176c2"
+  integrity sha512-K0MP3yYVKe8+etUwsg6zyRq+q9TGLaVf005WiBHiB8JZEomAwbBPERGunhU9uOqNQ5gJs8yVOPZ68Xcd1UHclA==
   dependencies:
     prop-types "^15.6.2"
-    tinymce "^6.3.1"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -2846,6 +2845,11 @@
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.8.tgz#bb197b9639aa1a04cf464a617fe800cccd92ad5c"
   integrity sha512-d0XxK3YTObnWVp6rZuev3c49+j4Lo8g4L1ZRm9z5L0xpoZycUPshHgczK5gsUMaZOstjVYYi09p5gYvUtfChYw==
+
+"@types/uuid@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-10.0.0.tgz#e9c07fe50da0f53dc24970cca94d619ff03f6f6d"
+  integrity sha512-7gqG38EyHgyP1S+7+xomFtL+ZNHcKv6DwNaCZmJmo1vgMugyF3TCnXVg4t1uk89mLNwnLtnY3TpOpCOyp1/xHQ==
 
 "@types/warning@^3.0.0":
   version "3.0.0"
@@ -16819,6 +16823,11 @@ timers-ext@^0.1.7:
     es5-ext "~0.10.46"
     next-tick "1"
 
+tiny-editor@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/tiny-editor/-/tiny-editor-0.5.0.tgz#fe46493ba5e1012afbe87d0c582977f152b9233c"
+  integrity sha512-Xxc0hfX1nTc5VSDJi/mUBG8q8WFftMHYVarn1JBDSzmI+upSGSsenf8bnY4++1fR8+6x7MWMi+lCQfJCvd/q4A==
+
 tiny-invariant@^1.0.0, tiny-invariant@^1.0.2, tiny-invariant@^1.0.6:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.3.1.tgz#8560808c916ef02ecfd55e66090df23a4b7aa642"
@@ -16838,11 +16847,6 @@ tinymce@^5.10.0:
   version "5.10.7"
   resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.10.7.tgz#d89d446f1962f2a1df6b2b70018ce475ec7ffb80"
   integrity sha512-9UUjaO0R7FxcFo0oxnd1lMs7H+D0Eh+dDVo5hKbVe1a+VB0nit97vOqlinj+YwgoBDt6/DSCUoWqAYlLI8BLYA==
-
-tinymce@^6.3.1:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-6.7.0.tgz#0ec245502cdefbfa0ff9042b423ac9a01e781423"
-  integrity sha512-Wf2RSobIXQ7XNw3/v4z1lPGiH3Pjsmc/6/7fG28aIS6uVWj/7IhvOPuwfJJDeOx0o0D3nSnoLHgR2KU8JAdE+w==
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -17600,6 +17604,11 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
+
+uuid@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-11.1.0.tgz#9549028be1753bb934fc96e2bca09bb4105ae912"
+  integrity sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==
 
 uuid@^8.3.0:
   version "8.3.2"
