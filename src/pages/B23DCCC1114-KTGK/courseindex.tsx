@@ -1,20 +1,25 @@
-// index.tsx
+// courseindex.tsx
 import React, { useState, useEffect } from 'react';
 import { Button, message, Descriptions, Drawer, Typography, Space } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
-import CourseList from '../coursecomponent/CourseList';
-import CourseFilter from '../coursecomponent/CourseFilter';
-import CourseForm from '../coursecomponent/CourseForm';
-import DeleteConfirmation from '../components/DeleteConfirmation';
-import { Course, CourseStatus, instructors } from '../Coursemodel/Course';
-import { getCourses, addCourse, updateCourse, deleteCourse } from '../../courseservices/courseService';
-
+import CourseList from './coursecomponents/CourseList';
+import CourseFilter from './coursecomponents/CourseFilter';
+import CourseForm from './coursecomponents/CourseForm';
+import DeleteConfirmation from './coursecomponents/DeleteConfirmation';
+import { Course, CourseStatus, instructors } from './Coursemodel/Course';
+import { getCourses, addCourse, updateCourse, deleteCourse } from './courseservices/courseService';
+// Thêm vào sau dòng imports và trước khi định nghĩa component
+interface CourseFilters {
+  name?: string;
+  instructorId?: string;
+  status?: CourseStatus;
+}
 const { Title } = Typography;
 
 const CoursesPage: React.FC = () => {
   const [courses, setCourses] = useState<Course[]>([]);
   const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
-  const [filters, setFilters] = useState<any>({});
+  const [filters, setFilters] = useState<CourseFilters>({});
   const [formVisible, setFormVisible] = useState(false);
   const [deleteModalVisible, setDeleteModalVisible] = useState(false);
   const [detailsVisible, setDetailsVisible] = useState(false);
@@ -29,13 +34,13 @@ const CoursesPage: React.FC = () => {
   }, []);
 
   // Apply filters
-  const handleFilter = (values: any) => {
+  const handleFilter = (values: CourseFilters) => {
     setFilters(values);
     let filtered = [...courses];
     
     if (values.name) {
       filtered = filtered.filter(course => 
-        course.name.toLowerCase().includes(values.name.toLowerCase())
+        course.name.toLowerCase().includes((values.name ?? '').toLowerCase())
       );
     }
     
@@ -176,7 +181,7 @@ const CoursesPage: React.FC = () => {
         placement="right"
         width={600}
         onClose={() => setDetailsVisible(false)}
-        open={detailsVisible}
+        visible={detailsVisible}
       >
         {selectedCourse && (
           <div>

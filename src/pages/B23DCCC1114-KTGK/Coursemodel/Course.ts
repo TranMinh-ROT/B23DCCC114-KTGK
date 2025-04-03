@@ -1,4 +1,4 @@
-// models/Course.ts
+// Coursemodels/Course.ts
 export enum CourseStatus {
     OPEN = "Đang mở",
     CLOSED = "Đã kết thúc",

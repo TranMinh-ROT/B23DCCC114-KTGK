@@ -1,4 +1,4 @@
-// components/CourseFilter.tsx
+// coursecomponents/CourseFilter.tsx
 import React from 'react';
 import { Input, Select, Form, Button, Space } from 'antd';
 import { CourseStatus, instructors } from '../Coursemodel/Course';

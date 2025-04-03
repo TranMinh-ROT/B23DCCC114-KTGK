@@ -1,9 +1,8 @@
-// components/CourseForm.tsx
+// coursecomponents/CourseForm.tsx
 import React, { useEffect } from 'react';
 import { Form, Input, Select, InputNumber, Button, Modal } from 'antd';
 import { Course, CourseStatus, instructors } from '../Coursemodel/Course';
 // Assuming TinyEditor is available in the project
-import TinyEditor from '../../coursecomponents/TinyEditor';
 
 interface CourseFormProps {
   visible: boolean;
@@ -40,7 +39,7 @@ const CourseForm: React.FC<CourseFormProps> = ({
   return (
     <Modal
       title={isEditing ? "Chỉnh sửa khóa học" : "Thêm khóa học mới"}
-      open={visible}
+      visible={visible}
       onCancel={onCancel}
       footer={null}
       width={700}
@@ -106,7 +105,7 @@ const CourseForm: React.FC<CourseFormProps> = ({
           label="Mô tả khóa học"
           rules={[{ required: true, message: "Vui lòng nhập mô tả khóa học" }]}
         >
-          <TinyEditor />
+          <Input.TextArea rows={6} placeholder="Nhập mô tả chi tiết khóa học" />
         </Form.Item>
 
         <Form.Item className="text-right">

@@ -1,4 +1,4 @@
-// components/DeleteConfirmation.tsx
+// coursecomponents/DeleteConfirmation.tsx
 import React from 'react';
 import { Modal } from 'antd';
 
@@ -16,7 +16,7 @@ const DeleteConfirmation: React.FC<DeleteConfirmationProps> = ({
   return (
     <Modal
       title="Xác nhận xóa"
-      open={visible}
+      visible={visible}
       onOk={onConfirm}
       onCancel={onCancel}
       okText="Xóa"

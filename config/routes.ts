@@ -36,7 +36,13 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
-
+// quản lý khóa học online
+{
+	path: '/course-management',
+	name: 'Quản lý khóa học',
+	component: './B23DCCC114-de1-KTGK',
+	icon: 'BookOutlined',
+},
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
